@@ -1,5 +1,6 @@
 import Hero from "./Components/Hero/Hero"
 import Navbar from "./Components/Navbar/Navbar"
+import Projects from "./Components/Projects/Projects"
 import Tech from "./Components/Tech/Tech"
 
 
@@ -9,6 +10,7 @@ const App = () => {
       <Navbar />
       <Hero />
       <Tech />
+      <Projects />
     </div>
   )
 }
