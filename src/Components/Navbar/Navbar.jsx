@@ -4,6 +4,14 @@ import linkedin from "../../assets/linkedin.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+  const scrollToSection = (e, sectionId) => {
+    e.preventDefault();
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
 
   return (
     <nav className="flex flex-wrap items-center justify-evenly  text-gray-500">
@@ -46,11 +54,11 @@ const Navbar = () => {
           isMenuOpen ? "block" : "hidden"
         } w-full lg:flex lg:w-auto lg:gap-4 list-none`}
       >
-        <li className="cursor-pointer hover:text-gray-800">Home</li>
-        <li className="cursor-pointer hover:text-gray-800">About</li>
-        <li className="cursor-pointer hover:text-gray-800">Tech Stack</li>
-        <li className="cursor-pointer hover:text-gray-800">Projects</li>
-        <li className="cursor-pointer hover:text-gray-800">Contact</li>
+         <a href="#home" onClick={(e) => scrollToSection(e, 'home')} className="text-gray-600 hover:text-gray-900 text-sm sm:text-base transition-colors">Home</a>
+            <a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="text-gray-600 hover:text-gray-900 text-sm sm:text-base transition-colors">About</a>
+            <a href="#tech-stack" onClick={(e) => scrollToSection(e, 'tech-stack')} className="text-gray-600 hover:text-gray-900 text-sm sm:text-base transition-colors">Tech Stack</a>
+            <a href="#projects" onClick={(e) => scrollToSection(e, 'projects')} className="text-gray-600 hover:text-gray-900 text-sm sm:text-base transition-colors">Projects</a>
+            <a href="#contact" onClick={(e) => scrollToSection(e, 'contact')} className="text-gray-600 hover:text-gray-900 text-sm sm:text-base transition-colors">Contact</a>
       </ul>
 
       {/* Social Links */}

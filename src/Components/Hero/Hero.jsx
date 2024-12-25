@@ -2,7 +2,7 @@ import profile from "../../assets/profile.png";
 
 const Hero = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 mt-[100px] w-full h-[350px]">
+    <div id="home" className="grid grid-cols-1 md:grid-cols-2 mt-[100px] w-full h-[350px]">
       <div className="flex flex-col justify-center p-4 md:p-0 md:w-[636px] h-full"> 
         <h1 className="text-lg md:text-4xl font-bold text-slate-700">Hi👋,</h1>
         <p className="text-lg md:text-4xl font-bold text-slate-700">My name is</p>

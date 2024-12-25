@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, MessageSquare, ArrowRight } from 'lucide-react';
+import Footer from '../Footer/Footer';
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -32,7 +33,7 @@ const Contact = () => {
   };
 
   return (
-    <>
+    <section id="contact" >
       <h2 className="text-4xl font-bold text-center text-slate-700 mb-12">Contact Me</h2>
       
       <div className="max-w-[90%] mx-auto my-20 flex flex-col md:flex-row items-center justify-between gap-8" id="contact">
@@ -52,7 +53,7 @@ const Contact = () => {
             </li>
             <li className="flex items-center">
               <Phone className="w-6 h-6 mr-3" />
-              +92 343 5544049
+              +92 313 5544049
             </li>
             <li className="flex items-center">
               <MapPin className="w-6 h-6 mr-3" />
@@ -108,8 +109,10 @@ const Contact = () => {
           </form>
           <span className="block mt-5">{result}</span>
         </div>
+        
       </div>
-    </>
+      <Footer />
+    </section>
   );
 };
 
