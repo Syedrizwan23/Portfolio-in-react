@@ -1,5 +1,5 @@
 import { Github, Linkedin } from 'lucide-react';
-import Profile from '../../Assets/Profile.png';
+import Profile from '../Assets/Profile.png';
 
 const Footer = () => {
   const scrollToSection = (e, sectionId) => {

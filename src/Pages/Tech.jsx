@@ -1,11 +1,11 @@
-import Html from "../../assets/html.png";
-import Css from "../../assets/css.png";
-import Js from "../../assets/javascript.png";
-import react from "../../assets/react.png";
-import bootstrap from "../../assets/bootstrap.png";
-import tailwind from "../../assets/tailwind.png";
-import git from "../../assets/git.png";
-import github from "../../assets/github.png";
+import Html from "../assets/html.png";
+import Css from "../assets/css.png";
+import Js from "../assets/javascript.png";
+import react from "../assets/react.png";
+import bootstrap from "../assets/bootstrap.png";
+import tailwind from "../assets/tailwind.png";
+import git from "../assets/git.png";
+import github from "../assets/github.png";
 
 const Tech = () => {
     const technologies = [

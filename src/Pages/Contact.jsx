@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, MessageSquare, ArrowRight } from 'lucide-react';
-import Footer from '../Footer/Footer';
+import Footer from './Footer';
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -34,7 +34,7 @@ const Contact = () => {
 
   return (
     <section id="contact" >
-      <h2 className="text-4xl font-bold text-center text-slate-700 mb-12">Contact Me</h2>
+      <h2 className=" mt-16 text-4xl font-bold text-center text-slate-700 mb-12">Contact Me</h2>
       
       <div className="max-w-[90%] mx-auto my-20 flex flex-col md:flex-row items-center justify-between gap-8" id="contact">
         <div className="w-full md:w-[48%] text-gray-600">

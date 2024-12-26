@@ -1,21 +1,24 @@
-import About from "./Components/About/About"
-import Hero from "./Components/Hero/Hero"
-import Navbar from "./Components/Navbar/Navbar"
-import Projects from "./Components/Projects/Projects"
-import Tech from "./Components/Tech/Tech"
-import Contact from "./Components/Contact/Contact"
+import About from "./Pages/About";
+import Hero from "./Pages/Hero";
+import Navbar from "./Components/Navbar";
+import Projects from "./Pages/Projects";
+import Tech from "./Pages/Tech";
+import Contact from "./Pages/Contact";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <About />
-      <Tech />
-      <Projects />
-      <Contact />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/tech" element={<Tech />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

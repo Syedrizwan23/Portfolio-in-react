@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 import { FaGithub } from 'react-icons/fa';
 
-import Eduford from '../../assets/project/Eduford.png';
-  import Edusity from '../../assets/project/Edusity.png';
-import Gemini from '../../assets/project/Gemini.png';
-import Homemaster from '../../assets/project/Homemaster.png';
-import Prime from '../../assets/project/Prime.png';
-import Sushiman from '../../assets/project/Sushiman.png';
+import Eduford from '../assets/project/Eduford.png';
+  import Edusity from '../assets/project/Edusity.png';
+import Gemini from '../assets/project/Gemini.png';
+import Homemaster from '../assets/project/Homemaster.png';
+import Prime from '../assets/project/Prime.png';
+import Sushiman from '../assets/project/Sushiman.png';
 
 const ProjectCard = ({ image, title, description, techStack, href }) => (
   <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
