@@ -1,7 +1,7 @@
 import { useState } from "react";
 import github from "../assets/github.png";
 import linkedin from "../assets/linkedin.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,6 +9,9 @@ const Navbar = () => {
   const handleNavClick = () => {
     setIsMenuOpen(false);
   };
+
+  // Common link styles
+  const linkStyles = "block text-gray-600 hover:text-gray-900 hover:translate-y-[-2px] text-sm sm:text-base transition-all duration-300 ease-in-out";
 
   return (
     <nav className="w-full flex items-center justify-between px-4 py-3 text-gray-500">
@@ -66,21 +69,61 @@ const Navbar = () => {
         } lg:flex flex-col lg:flex-row lg:relative top-16 lg:top-0 right-4 lg:right-0 bg-white lg:bg-transparent p-4 lg:p-4 rounded-[30px] shadow-lg lg:shadow-slate-200 min-w-[200px] lg:min-w-0 z-50`}
       >
         <ul className="flex flex-col lg:flex-row lg:gap-4 space-y-2 lg:space-y-0 list-none">
-          <Link to='/' onClick={handleNavClick}><li>
-            <a href="#home" className="block text-gray-600 hover:text-gray-900 hover:translate-y-[-2px] text-sm sm:text-base transition-all duration-300 ease-in-out">Home</a>
-          </li></Link>
-          <Link to='/about' onClick={handleNavClick}><li>
-            <a href="#about" className="block text-gray-600 hover:text-gray-900 hover:translate-y-[-2px] text-sm sm:text-base transition-all duration-300 ease-in-out">About</a>
-          </li></Link>
-          <Link to='/tech' onClick={handleNavClick}><li>
-            <a href="#tech-stack" className="block text-gray-600 hover:text-gray-900 hover:translate-y-[-2px] text-sm sm:text-base transition-all duration-300 ease-in-out">Tech Stack</a>
-          </li></Link>
-          <Link to='/projects' onClick={handleNavClick}><li>
-            <a href="#projects" className="block text-gray-600 hover:text-gray-900 hover:translate-y-[-2px] text-sm sm:text-base transition-all duration-300 ease-in-out">Projects</a>
-          </li></Link>
-          <Link to='/contact' onClick={handleNavClick}><li>
-            <a href="#contact" className="block text-gray-600 hover:text-gray-900 hover:translate-y-[-2px] text-sm sm:text-base transition-all duration-300 ease-in-out">Contact</a>
-          </li></Link>
+          <li>
+            <NavLink 
+              to="/" 
+              onClick={handleNavClick}
+              className={({ isActive }) => 
+                `${linkStyles} ${isActive ? "text-red-600" : ""}`
+              }
+            >
+              Home
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/about" 
+              onClick={handleNavClick}
+              className={({ isActive }) => 
+                `${linkStyles} ${isActive ? "text-red-600" : ""}`
+              }
+            >
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/tech" 
+              onClick={handleNavClick}
+              className={({ isActive }) => 
+                `${linkStyles} ${isActive ? "text-red-600" : ""}`
+              }
+            >
+              Tech Stack
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/projects" 
+              onClick={handleNavClick}
+              className={({ isActive }) => 
+                `${linkStyles} ${isActive ? "text-red-600" : ""}`
+              }
+            >
+              Projects
+            </NavLink>
+          </li>
+          <li>
+            <NavLink 
+              to="/contact" 
+              onClick={handleNavClick}
+              className={({ isActive }) => 
+                `${linkStyles} ${isActive ? "text-red-600" : ""}`
+              }
+            >
+              Contact
+            </NavLink>
+          </li>
         </ul>
       </div>
 
