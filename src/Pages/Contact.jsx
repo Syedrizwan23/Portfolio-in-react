@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Mail, Phone, MapPin, MessageSquare, ArrowRight } from 'lucide-react';
-import Footer from './Footer';
+
 
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -111,7 +111,7 @@ const Contact = () => {
         </div>
         
       </div>
-      <Footer />
+      
     </section>
   );
 };
