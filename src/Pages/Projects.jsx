@@ -7,6 +7,7 @@ import Gemini from '../assets/project/Gemini.png';
 import Homemaster from '../assets/project/Homemaster.png';
 import Prime from '../assets/project/Prime.png';
 import Sushiman from '../assets/project/Sushiman.png';
+import Music from '../assets/project/Music.png';
 
 const ProjectCard = ({ image, title, description, techStack, href }) => (
   <div className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
@@ -33,6 +34,13 @@ const ProjectCard = ({ image, title, description, techStack, href }) => (
 
 const Projects = () => {
   const projects = [
+    {
+      image: Music,
+      title: "Music School",
+      description: "This is sample project for Music School. In this project we have used Next js, Tailwind Css and make it responsive for all devices. Created multiple sections for Home, Courses,  contact us",
+      techStack: " Next js, Tailwind Css",
+      href: "https://github.com/Syedrizwan23/Music-next-js.git" ,
+    },
     {
       image: Edusity,
       title: "Edusity University",
