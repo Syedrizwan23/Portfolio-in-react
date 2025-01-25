@@ -20,7 +20,7 @@ const About = () => {
           </h1>
           <p className="text-xl md:text-2xl lg:text-3xl text-gray-400">
             I am a Front-End developer with experience in HTML, CSS, JavaScript,
-            React, Tailwind, Git, GitHub, and Bootstrap. I am passionate about
+            React Js, Next Js, Tailwind, Git, GitHub, and Bootstrap. I am passionate about
             creating responsive and user-friendly websites. I am always eager to
             learn new technologies and improve my skills. I am a team player and I
             enjoy working with others to achieve a common goal. I am looking for

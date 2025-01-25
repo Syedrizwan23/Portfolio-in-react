@@ -21,7 +21,7 @@ const Hero = () => {
         <h1 className="text-lg md:text-4xl font-bold text-slate-700">Hi👋,</h1>
         <p className="text-lg md:text-4xl font-bold text-slate-700">My name is</p>
         <p className="text-lg md:text-4xl font-bold bg-gradient-to-r from-rose-600 to-yellow-500 bg-clip-text text-transparent">Syed Rizwan Ghani</p>
-        <p className="text-lg md:text-4xl font-bold text-slate-700">I build things for web</p>
+        <p className="text-lg md:text-4xl font-bold text-slate-700">Transforming Ideas into Interactive Code</p>
       </div>
       <div className="flex justify-center items-center p-4 md:p-0 h-full order-1 md:order-2"> 
         <img
